@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+#include<string>
+#include<cmath>
+
+int main()
+{
+	string name = "snn";
+
+	cout << "Hi there, how are you?" << endl;
+	cin >> name;
+
+	cout << "I'm also good, you must be new here." << endl;
+	cin >> name;
+
+	cout << "May I know your name?" << endl;
+	cin >> name;
+
+	cout << "Waiittt!!! Your name is snn?" << endl;
+	cin >> name;
+
+	cout << "I think I know this name!" << endl;
+	cin >> name;
+
+	cout << "Let me check, give me a few seconds." << endl;
+	cin >> name;
+
+	cout << "Today is your birthday!" << endl;
+	cin >> name;
+
+	cout << "lyy asks me to prepare this gift for you." << endl;
+	cin >> name;
+
+	cout << "here is your gift!" << endl;
+	cin >> name;
+
+
+	int n = 7; //size of heart
+	for (int i = -3 * n / 2; i <= n; i++) {
+		for (int j = -3 * n / 2; j <= 3 * n / 2; j++) {
+			/* inside either diamond or two circles */
+			if ((abs(i) + abs(j) < n) || ((-n / 2 - i) * (-n / 2 - i) + (n / 2 - j) * (n / 2 - j) <= n * n / 2) || ((-n / 2 - i) * (-n / 2 - i) + (-n / 2 - j) * (-n / 2 - j) <= n * n / 2)) {
+				cout << "n ";
+			}
+			else {
+				cout << "  ";
+			}
+		}
+		cout << "\n";
+	}
+
+	system("pause");
+
+	return 0;
+
+}
